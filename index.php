@@ -24,7 +24,6 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
@@ -44,14 +43,14 @@
 				<hr class="my-2">
 				<p>Feel free to click the button below.</p>
 				<p class="lead">
-					<a class="btn btn-primary btn-lg" id="click" onclick="document.getElementById('click').innerHTML = 'You did it!!.';" role="button">Click Me</a>
+					<a class="btn btn-primary btn-lg" id="click" onclick="document.getElementById('click').innerHTML = 'You did it!!';" role="button">Click Me</a>
 				</p>
 			</div>
 		</section>
 		<section class="m-5">
 			<div class="jumbotron">
 				<h1 class="display-3">Test #2</h1>
-				<p class="lead">This is another test to practice the same number of skills with JavaScript.</p>
+				<p class="lead">This is another test to practice those same skills I have with JavaScript.</p>
 				<hr class="my-2">
 				<p>Please hover over button below.</p>
 				<p class="lead">
@@ -63,11 +62,5 @@
 				</p>
 			</div>
 		</section>
-		<section>
-
-		</section>
-		<footer>
-
-		</footer>
 	</body>
 </html>
