@@ -15,9 +15,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-		<!-- My JavaScript -->
-		<script src="scripts/script.js"></script>
-
 		<title>JavaScript Events</title>
 	</head>
 	<body>
@@ -31,7 +28,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="index.php">Reset <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="https://github.com/Koriganp/javascript-events" target="_blank">GitHub</a>
@@ -40,11 +37,31 @@
 				</div>
 			</nav>
 		</header>
-		<section>
-
+		<section class="m-5">
+			<div class="jumbotron">
+				<h1 class="display-3">Test #1</h1>
+				<p class="lead">This is a test to practice my very small amount of skills with JavaScript.</p>
+				<hr class="my-2">
+				<p>Feel free to click the button below.</p>
+				<p class="lead">
+					<a class="btn btn-primary btn-lg" id="click" onclick="document.getElementById('click').innerHTML = 'You did it!!.';" role="button">Click Me</a>
+				</p>
+			</div>
 		</section>
-		<section>
-
+		<section class="m-5">
+			<div class="jumbotron">
+				<h1 class="display-3">Test #2</h1>
+				<p class="lead">This is another test to practice the same number of skills with JavaScript.</p>
+				<hr class="my-2">
+				<p>Feel free to hover over button below.</p>
+				<p class="lead">
+					<a class="btn btn-primary btn-lg" id="mouse"
+						onmouseover="document.getElementById('mouse').style.backgroundColor = 'green';"
+						onmouseout="document.getElementById('mouse').style.backgroundColor = 'blue';"
+						onclick="document.getElementById('mouse').innerHTML = 'It didn\'t say click...';"
+						onmouseup="document.getElementById('mouse').style.backgroundColor = 'red';" role="button">Move pointer here...</a>
+				</p>
+			</div>
 		</section>
 		<section>
 
