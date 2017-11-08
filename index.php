@@ -53,7 +53,7 @@
 				<h1 class="display-3">Test #2</h1>
 				<p class="lead">This is another test to practice the same number of skills with JavaScript.</p>
 				<hr class="my-2">
-				<p>Feel free to hover over button below.</p>
+				<p>Please hover over button below.</p>
 				<p class="lead">
 					<a class="btn btn-primary btn-lg" id="mouse"
 						onmouseover="document.getElementById('mouse').style.backgroundColor = 'green';"
