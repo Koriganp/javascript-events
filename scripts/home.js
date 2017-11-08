@@ -37,3 +37,7 @@ function setRandomBackgroundColors() {
 		tags[tag].style.backgroundColor = randomColor();
 	}
 }
+
+function textColor() {
+	document.getElementById("words").style.textDecorationColor = randomColor()
+}

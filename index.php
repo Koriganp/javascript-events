@@ -62,8 +62,8 @@
 		</section>
 		<section class="m-5">
 			<div class="jumbotron colorize">
-				<h1 class="display-3">Test #3</h1>
-				<p class="lead">I got $killz!!!</p>
+				<h1 class="display-3" id="words" onmouseover="textColor()">Test #3 Seizure Warning:</h1>
+				<p class="lead">Don't click on the button if you're prone to seizures.</p>
 				<hr class="my-2">
 				<p>Please click this button.</p>
 				<p class="lead">
