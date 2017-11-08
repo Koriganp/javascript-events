@@ -15,16 +15,18 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
+		<script src="scripts/home.js" rel="script"></script>
+
 		<title>JavaScript Events</title>
 	</head>
-	<body>
+	<body class="colorize">
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white colorize">
 				<a class="navbar-brand" href="#">JavaScript Events</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler colorize" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="collapse navbar-collapse colorize" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
 							<a class="nav-link" href="index.php">Reset <span class="sr-only">(current)</span></a>
@@ -37,28 +39,35 @@
 			</nav>
 		</header>
 		<section class="m-5">
-			<div class="jumbotron">
+			<div class="jumbotron colorize">
 				<h1 class="display-3">Test #1</h1>
 				<p class="lead">This is a test to practice my very small amount of skills with JavaScript.</p>
 				<hr class="my-2">
 				<p>Feel free to click the button below.</p>
 				<p class="lead">
-					<a class="btn btn-primary btn-lg" id="click" onclick="document.getElementById('click').innerHTML = 'You did it!!';" role="button">Click Me</a>
+					<a class="btn btn-primary btn-lg colorize" id="click" onclick="colorClick()" role="button">Click Me</a>
 				</p>
 			</div>
 		</section>
 		<section class="m-5">
-			<div class="jumbotron">
+			<div class="jumbotron colorize">
 				<h1 class="display-3">Test #2</h1>
 				<p class="lead">This is another test to practice those same skills I have with JavaScript.</p>
 				<hr class="my-2">
 				<p>Please hover over button below.</p>
 				<p class="lead">
-					<a class="btn btn-primary btn-lg" id="mouse"
-						onmouseover="document.getElementById('mouse').style.backgroundColor = 'green';"
-						onmouseout="document.getElementById('mouse').style.backgroundColor = 'blue';"
-						onclick="document.getElementById('mouse').innerHTML = 'It didn\'t say click...';"
-						onmouseup="document.getElementById('mouse').style.backgroundColor = 'red';" role="button">Move pointer here...</a>
+					<a class="btn btn-primary btn-lg colorize" id="mouse" onmouseover="greenButton()" onmouseout="blueButton()" onclick="wrongMove()" onmouseup="redButton()">Move pointer here...</a>
+				</p>
+			</div>
+		</section>
+		<section class="m-5">
+			<div class="jumbotron colorize">
+				<h1 class="display-3">Test #3</h1>
+				<p class="lead">I got $killz!!!</p>
+				<hr class="my-2">
+				<p>Please click this button.</p>
+				<p class="lead">
+					<a class="btn btn-primary btn-lg colorize" onclick="setRandomBackgroundColors()">THIS ONE!!!</a>
 				</p>
 			</div>
 		</section>
