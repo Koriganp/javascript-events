@@ -41,3 +41,7 @@ function setRandomBackgroundColors() {
 function textColor() {
 	document.getElementById("words").style.color = randomColor()
 }
+
+function fontFamily() {
+	document.getElementById("family").style.fontFamily = "Pacifico, cursive";
+}
