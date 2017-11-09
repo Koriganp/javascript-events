@@ -32,7 +32,7 @@
 							<a class="nav-link" href="index.php">Reset <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="https://github.com/Koriganp/javascript-events" target="_blank">GitHub</a>
+							<a class="nav-link" href="https://github.com/Koriganp/javascript-events" target="_blank">GitHub Repository</a>
 						</li>
 					</ul>
 				</div>
@@ -52,7 +52,7 @@
 		<section class="m-5">
 			<div class="jumbotron colorize">
 				<h1 class="display-3">Test #2</h1>
-				<p class="lead">This is another test to practice those same skills I have with JavaScript.</p>
+				<p class="lead">This is another test to practice those awesome skills again.</p>
 				<hr class="my-2">
 				<p>Please hover over button below.</p>
 				<p class="lead">
@@ -63,7 +63,7 @@
 		<section class="m-5">
 			<div class="jumbotron colorize">
 				<h1 class="display-3" id="words" onmouseover="textColor()">Test #3 Seizure Warning:</h1>
-				<p class="lead">Don't click on the button if you're prone to seizures.</p>
+				<p class="lead">Don't click the button fast if you're prone to seizures.</p>
 				<hr class="my-2">
 				<p>Please click this button.</p>
 				<p class="lead">

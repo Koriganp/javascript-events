@@ -39,5 +39,5 @@ function setRandomBackgroundColors() {
 }
 
 function textColor() {
-	document.getElementById("words").style.textDecorationColor = randomColor()
+	document.getElementById("words").style.color = randomColor()
 }
