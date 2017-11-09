@@ -1,19 +1,24 @@
-function colorClick() {
+document.getElementById("click").onclick = function() {colorClick()};
+function colorClick(){
 	document.getElementById('click').innerHTML = 'You did it!!';
 }
 
+document.getElementById("mouse").onmouseover = function() {greenButton()};
 function greenButton() {
 	document.getElementById('mouse').style.backgroundColor = 'green';
 }
 
+document.getElementById("mouse").onmouseout = function() {blueButton()};
 function blueButton() {
 	document.getElementById('mouse').style.backgroundColor = 'blue';
 }
 
+document.getElementById("mouse").onclick = function() {wrongMove()};
 function wrongMove() {
 	document.getElementById('mouse').innerHTML = 'It didn\'t say click...';
 }
 
+document.getElementById("mouse").onmouseup = function() {redButton()};
 function redButton() {
 	document.getElementById('mouse').style.backgroundColor = 'red';
 }

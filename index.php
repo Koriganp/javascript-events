@@ -20,9 +20,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-		<!-- My scripts -->
-		<script src="scripts/home.js" rel="script"></script>
-
 		<title>JavaScript Events</title>
 	</head>
 	<body class="colorize">
@@ -51,7 +48,7 @@
 				<hr class="my-2">
 				<p>Feel free to click the button below.</p>
 				<p class="lead">
-					<a class="btn btn-primary btn-lg colorize mr-5" id="click" onclick="colorClick()" role="button">Click Me</a>
+					<a class="btn btn-primary btn-lg colorize mr-5" id="click" role="button">Click Me</a>
 					<a class="btn btn-primary btn-lg colorize ml-5" id="tests" onclick="testsSuck()" role="button">TESTS SUCK!!</a>
 				</p>
 			</div>
@@ -63,7 +60,7 @@
 				<hr class="my-2">
 				<p>Please hover over button below.</p>
 				<p class="lead">
-					<a class="btn btn-primary btn-lg colorize" id="mouse" onmouseover="greenButton()" onmouseout="blueButton()" onclick="wrongMove()" onmouseup="redButton()">Move pointer here...</a>
+					<a class="btn btn-primary btn-lg colorize" id="mouse">Move pointer here...</a>
 				</p>
 			</div>
 		</section>
@@ -109,5 +106,7 @@
 		<footer class="mt-5 p-4 bg-dark text-light text-center">
 			<p>You're meant to have fun in life.</p>
 		</footer>
+		<!-- My scripts -->
+		<script src="scripts/home.js" rel="script"></script>
 	</body>
 </html>
