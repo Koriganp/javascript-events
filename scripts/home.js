@@ -46,12 +46,24 @@ function fontFamily() {
 	document.getElementById("family").style.fontFamily = "Pacifico, cursive";
 }
 
-function fontFamilyTwo() {
-	document.getElementById("robot").style.fontFamily = "Libre Barcode 39 Text, cursive";
+function fontGrow() {
+	let fontSize = document.getElementById("robot").style.fontSize;
+	if(fontSize === "") {
+			fontSize = "1.0em";
+		}
+
+	let emSize = parseFloat(fontSize.substring(0, fontSize.indexOf("e")));
+	fontSize = (1.01 * emSize) + "em";
+	document.getElementById("robot").style.fontSize = fontSize;
 }
 
-function fontFamilyThree() {
-	document.getElementById("pirate").style.fontFamily = "Nothing You Could Do, cursive";
+function ninjaHide() {
+	var x = document.getElementById("hide");
+	if (x.style.display === "none"){
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
 }
 
 //Drag and Drop
