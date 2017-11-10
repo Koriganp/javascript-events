@@ -1,30 +1,32 @@
 	// test click event
-	document.getElementById("click").onclick = function() {colorClick()};
+	document.getElementById("click").onclick = colorClick;
 	function colorClick(){
-		document.getElementById('click').innerHTML = 'You did it!!';
+		document.innerHTML = 'You did it!!';
 	}
 
 	// test find and replace
+	document.getElementById("tests").onclick = testsSuck();
 	function testsSuck(){
 		document.body.innerHTML = document.body.innerHTML.replace('Test', 'Party');
+
 	}
 
 	//test four functions on same element
-	document.getElementById("mouse").onmouseover = function() {greenButton()};
+	document.getElementById("mouse").onmouseover = greenButton;
 	function greenButton() {
-		document.getElementById('mouse').style.backgroundColor = 'green';
+		document.style.backgroundColor = 'green';
 	}
-	document.getElementById("mouse").onmouseout = function() {blueButton()};
+	document.getElementById("mouse").onmouseout = blueButton;
 	function blueButton() {
-		document.getElementById('mouse').style.backgroundColor = 'blue';
+		document.style.backgroundColor = 'blue';
 	}
-	document.getElementById("mouse").onclick = function() {wrongMove()};
+	document.getElementById("mouse").onclick = wrongMove;
 	function wrongMove() {
-		document.getElementById('mouse').innerHTML = 'It didn\'t say click...';
+		document.innerHTML = 'It didn\'t say click...';
 	}
-	document.getElementById("mouse").onmouseup = function() {redButton()};
+	document.getElementById("mouse").onmouseup = redButton;
 	function redButton() {
-		document.getElementById('mouse').style.backgroundColor = 'red';
+		document.style.backgroundColor = 'red';
 	}
 
 	// Seizure button
@@ -38,7 +40,7 @@
 		let rgb = "rgb(" + red + ", " + green + ", " + blue + ")";
 		return(rgb);
 	}
-	document.getElementById("colorize").onclick = function() {setRandomBackgroundColors()};
+	document.getElementById("colorize").onclick = setRandomBackgroundColors;
 	function setRandomBackgroundColors() {
 		let tags = document.getElementsByClassName("colorize");
 		for(let tag in tags) {
@@ -47,31 +49,31 @@
 	}
 
 	// test calling a function on a different event and element
-	document.getElementById("words").onmouseover = function() {textColor()};
+	document.getElementById("words").onmouseover = textColor;
 	function textColor() {
-		document.getElementById("words").style.color = randomColor()
+		document.style.color = randomColor()
 	}
 
 	// test mouse enter and changing font
-	document.getElementById("family").onmouseenter = function() {fontFamily()};
+	document.getElementById("family").onmouseenter = fontFamily;
 	function fontFamily() {
-		document.getElementById("family").style.fontFamily = "Pacifico, cursive";
+		document.style.fontFamily = "Pacifico, cursive";
 	}
 
 	// test changing font size
-	document.getElementById("robot").onclick = function() {fontGrow()};
+	document.getElementById("robot").onclick = fontGrow;
 	function fontGrow() {
-		let fontSize = document.getElementById("robot").style.fontSize;
+		let fontSize = document.style.fontSize;
 		if(fontSize === "") {
 				fontSize = "1.0em";
 			}
 		let emSize = parseFloat(fontSize.substring(0, fontSize.indexOf("e")));
 		fontSize = (1.01 * emSize) + "em";
-		document.getElementById("robot").style.fontSize = fontSize;
+		document.style.fontSize = fontSize;
 	}
 
 	// test changing display
-	document.getElementById("hide").onmouseover = function(){ninjaHide()};
+	document.getElementById("hide").onmouseover = ninjaHide;
 	function ninjaHide() {
 		var x = document.getElementById("hide");
 		if (x.style.display === "none"){
