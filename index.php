@@ -49,7 +49,7 @@
 				<p>Feel free to click the button below.</p>
 				<p class="lead">
 					<a class="btn btn-primary btn-lg colorize mr-5" id="click" role="button">Click Me</a>
-					<a class="btn btn-primary btn-lg colorize ml-5" id="tests" onclick="testsSuck()" role="button">TESTS SUCK!!</a>
+					<a class="btn btn-primary btn-lg colorize ml-5" id="tests" onclick="testsSuck()">TESTS SUCK!!</a>
 				</p>
 			</div>
 		</section>
@@ -66,26 +66,26 @@
 		</section>
 		<section class="m-5">
 			<div class="jumbotron colorize">
-				<h1 class="display-3" id="words" onmouseover="textColor()">Test #3 Seizure Warning:</h1>
+				<h1 class="display-3" id="words">Test #3 Seizure Warning:</h1>
 				<p class="lead">Don't click the button fast if you're prone to seizures.</p>
 				<hr class="my-2">
 				<p>Please click this button.</p>
 				<p class="lead">
-					<a class="btn btn-primary btn-lg colorize" onclick="setRandomBackgroundColors()">THIS ONE!!!</a>
+					<a class="btn btn-primary btn-lg colorize" id="colorize">THIS ONE!!!</a>
 				</p>
 			</div>
 		</section>
 		<section>
 			<div class="container">
-				<h1 class="text-center mb-5">This is a Font Party!!!</h1>
+				<h1 class="text-center mb-5">This is a Font Test!!!</h1>
 				<div class="row">
 					<div class="col-4">
-						<p id="family" onmouseenter="fontFamily()">Only God can make a tree - but you can paint one. Tree trunks grow however makes them happy. A thin paint will stick to a thick paint. Remember how free clouds are. They just lay around in the sky all day long. We might as well make some Almighty mountains today as well, what the heck. The very fact that you're aware of suffering is enough reason to be overjoyed that you're alive and can experience it. Working it up and down, back and forth. And just raise cain. Use absolutely no pressure. Just like an angel's wing. Mix your color marbly don't mix it dead. Life is too short to be alone, too precious. Share it with a friend. The first step to doing anything is to believe you can do it. See it finished in your mind before you ever start. A beautiful little sunset. Let's make a nice big leafy tree. There are no mistakes. You can fix anything that happens. This is the fun part We artists are a different breed of people. We're a happy bunch. When you buy that first tube of paint it gives you an artist license. We start with a vision in our heart, and we put it on canvas.</p>
+						<p id="family">Only God can make a tree - but you can paint one. Tree trunks grow however makes them happy. A thin paint will stick to a thick paint. Remember how free clouds are. They just lay around in the sky all day long. We might as well make some Almighty mountains today as well, what the heck. The very fact that you're aware of suffering is enough reason to be overjoyed that you're alive and can experience it. Working it up and down, back and forth. And just raise cain. Use absolutely no pressure. Just like an angel's wing. Mix your color marbly don't mix it dead. Life is too short to be alone, too precious. Share it with a friend. The first step to doing anything is to believe you can do it. See it finished in your mind before you ever start. A beautiful little sunset. Let's make a nice big leafy tree. There are no mistakes. You can fix anything that happens. This is the fun part We artists are a different breed of people. We're a happy bunch. When you buy that first tube of paint it gives you an artist license. We start with a vision in our heart, and we put it on canvas.</p>
 					</div>
 					<div class="col-4">
-						<p id="robot" onclick="fontGrow()">Meeting assassin if you want to motivate these clowns, try less carrot and more stick, viral engagement diversify kpis open door policy. Usabiltiy. Run it up the flag pole locked and loaded baseline the procedure and same page your department herding cats going forward. This is not the hill i want to die on i'll book a meeting so we can solution this before the sprint is over the last person we talked to said this would be ready overcome key issues to meet key milestones, yet golden goose bench mark high turnaround rate. If you want to motivate these clowns, try less carrot and more stick pro-sumer software yet cloud strategy yet we need to dialog around your choice of work attire quarterly sales are at an all-time low, deploy granularity. Window-licker not enough bandwidth, and close the loop, UI UI.</p>
+						<p id="robot">Meeting assassin if you want to motivate these clowns, try less carrot and more stick, viral engagement diversify kpis open door policy. Usabiltiy. Run it up the flag pole locked and loaded baseline the procedure and same page your department herding cats going forward. This is not the hill i want to die on i'll book a meeting so we can solution this before the sprint is over the last person we talked to said this would be ready overcome key issues to meet key milestones, yet golden goose bench mark high turnaround rate. If you want to motivate these clowns, try less carrot and more stick pro-sumer software yet cloud strategy yet we need to dialog around your choice of work attire quarterly sales are at an all-time low, deploy granularity. Window-licker not enough bandwidth, and close the loop, UI UI.</p>
 					</div>
-					<div class="col-4" id="hide" onmouseenter="ninjaHide()">
+					<div class="col-4" id="hide">
 						<p>Blimey strike colors driver tender rum take a caulk tackle mizzen stern tack brig jury mast lad barkadeer hornswaggle. Lad Gold Road hornswaggle Jolly Roger black jack yo-ho-ho line hempen halter gangplank avast pillage Sail ho snow bowsprit shrouds. Loot league case shot Shiver me timbers scuppers gun gangplank pillage lugger tack hogshead brigantine Jack Tar fire ship Arr. Blow the man down Brethren of the Coast transom scuttle main sheet quarterdeck fluke scuppers yawl pressgang rum gally Buccaneer boom rigging. Tender fathom lugger me belay reef rutters code of conduct matey jack bounty no prey, no pay snow driver sutler. Wherry case shot crack Jenny's tea cup Cat o'nine tails broadside lugsail yo-ho-ho doubloon Sink me six pounders Gold Road hardtack log snow Davy Jones' Locker. </p>
 					</div>
 				</div>
@@ -93,12 +93,12 @@
 		</section>
 		<section>
 			<div class="container">
-				<h1 class="text-center mb-5">The party continues...</h1>
+				<h1 class="text-center mb-5">The Test continues...</h1>
 				<div class="row">
-					<div class="col-6" id="target" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">
+					<div class="col-6 target" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">
 						<p id="p1" draggable="true" ondragstart="dragstart_handler(event);">I am a free spirit! I don't want to be stuck on this side of the page. Will you drag me over to the other side? Please don't leave me here...</p>
 					</div>
-					<div class="col-6" id="target" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">
+					<div class="col-6 target" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">
 					</div>
 				</div>
 			</div>
